@@ -17,9 +17,6 @@
                             <input type="text" class="search-query" placeholder="Buscar carrito, muñeca, leche,etc" name="srcBuscadorMicami">
                         </form>
                     </div>
-                    <div class="row-fluid" id="logeoIdentidad">
-
-                    </div>
                 </div>
             </div>
                 
@@ -32,7 +29,7 @@
                         <button class="btn btn-success" id="abarroteria" onclick="btnPress('Abarroteria');">ABARROTERIA</button>
                         <button class="btn btn-warning offset4 dropdown-toggle" data-toggle="dropdown" id="miBolsa" onclick="">
                             MI BOLSA DE COMPRAS
-                            <span class="badge" id="contadorProductos"></span>
+                            <span class="badge" id="contadorProductos">0</span>
                         </button>
                         <div class="bolsadecompras"></div>
                     </div>

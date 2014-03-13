@@ -1,4 +1,4 @@
-var nombreCliente = "";
+var nombreCliente="";
 var btnPresionado;
 var usuario = "";
 var sessionMicami="";
@@ -16,7 +16,7 @@ $(document).ready(function(){
 function cargarEncabezado(urlPagina){
     $.get(urlPagina, function(data){
        $('div#contenedorSuperior').html(data);
-       verificarSesion();
+        verificarSesion();
     });
 };
 
@@ -109,16 +109,16 @@ function cargarProductos(rubro){
                     Largo="<div class='divLargoProducto'></div>";
                 }
                 
-                var divProductos = "<div id='producto"+vCont+"' class='span3'>"
-                                        +"<div class='divImgProducto'><img class='fotoProducto img-rounded' src='./fotos/"+valor.fotoProducto+".jpg'></div>"
-                                        +"<div class='divDetalles'>"
-                                            +"<div class='divNombreProducto'>"+valor.idProducto+"</div>"
+                var divProductos = "<div class='col-xs-6 col-md-4 producto' id='producto"+vCont+"'>"
+                                        +"<div class='productoImg'><img class='fotoProducto img-rounded' src='./fotos/"+valor.fotoProducto+".jpg'></div>"
+                                        +"<div class='productoDetalles'>"
+                                            //+"<div class='divNombreProducto'>"+valor.idProducto+"</div>"
                                             +"<div class='divNombreProducto'>"+valor.nombreProducto+"</div>"
                                             +"<div class='divPrecioProducto'>S/."+valor.precioProducto+"</div>"
-                                            +Ancho
-                                            +Alto
-                                            +Largo
-                                            +Caracteristicas
+                                            //+Ancho
+                                            //+Alto
+                                            //+Largo
+                                            //+Caracteristicas
                                         +"</div>"
                                         +"<div class='divBotonesProducto'>"
                                             +"<div class='btn btn-success' onclick='seleccionarProducto("+valor.idProducto+");' id='btnProducto"+valor.idProducto+"'>Seleccionar</div>"
@@ -191,7 +191,6 @@ function verificarSesion(){
         $('div#logeoIdentidad').empty();
         $('div#logeoIdentidad').append(''
             +'<button type="button" class="btn btn-primary" href="#" onclick="btnPress('+texto1+')">Mi cuenta</button>'
-            +'<button type="button" class="btn btn-primary" href="#" onclick="btnPress('+texto2+')">Registrate</button>'
             );
     }else{
         $('div#logeoIdentidad').empty();
@@ -208,16 +207,17 @@ function verificarSesion(){
 function loguearUsuario(){
     var usu2 = $("#txtUser").val();
     var pass2 = $("#txtPass").val();
+    alert("hola "+usu2+pass2);
     $.post("modelo/consultaLogin.php", {"value":usu2,"value2":pass2}, function(data){
         if(data.success){
             //utilizaremos un iterador para extraer los datos contenidos en el objeto 'items' => $JSONArray
             $.each(data.items,function(id,valor){
                 nombreCliente=valor.nombres;
+            alert("Te damos la bienvenida: "+nombreCliente);
                 $("div#logeoIdentidad").empty();
                 $('div#logeoIdentidad').append(''
                     +'<button type="button" class="btn btn-link">Bienvenid@,'+nombreCliente+'</button>'
                     +'<button type="button" class="btn btn-link">Cerrar sesion</button>');
-                //alert("Te damos la bienvenida: "+nombreCliente);
             });
             cargarContenido("vista/inicio.php");
         }else{
@@ -226,6 +226,5 @@ function loguearUsuario(){
             $("#txtUser").val("");
             $("#txtUser").focus();
         }
-    }, "json"); 
+    },"json"); 
 };
-

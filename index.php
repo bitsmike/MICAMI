@@ -13,13 +13,14 @@
         <link rel="stylesheet" href="css/bootstrap-theme.css">
         <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
-        <script src="js/sessvars.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <!--        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>  -->
 <!--        <script src="js/plugins.js"></script>  -->
     </head>
     
     <body>
+        <div class="row-fluid container" id="logeoIdentidad">
+        </div>
         <section>
             <div class="container" id="contenedorSuperior"></div>
 

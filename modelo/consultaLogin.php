@@ -1,10 +1,9 @@
 <?php
-    session_start();
     require('../conexion/class.php');
     require('../conexion/conf.php');
 
-    $error="";
-    $saludo="";
+//    $error="";
+//    $saludo="";
     //$usuLogin="camila";
     //$pasLogin="camila";
     $usuLogin=$_POST["value"];

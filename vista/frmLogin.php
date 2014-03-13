@@ -1,6 +1,5 @@
 <div class="contenedorPrincipal">
     <div id="bordeRedondeado">
-      <form action="">
           <div class="form-group">
             <label class="sr-only" for="txtUser">Usuario</label>
             <input type="user" class="form-control" id="txtUser" autofocus placeholder="usuario" required>
@@ -10,7 +9,6 @@
             <input type="password" class="form-control" id="txtPass" placeholder="Contraseña" required>
           </div>
           <button type="submit" class="btn btn-default" onclick="loguearUsuario();" onkeypress="loguearUsuario();">Ingresar</button>
-      </form>
 <!--
         <form accept-charset="UTF-8">
             <label>Usuario:</label> 

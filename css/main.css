@@ -5,10 +5,22 @@
 
 body {padding-top: 40px; padding-bottom: 40px;}
 .Formulario-position{ padding-top: 70px; padding-left: 40%;}
-.divProductos { alignment-adjust: center;}
-.divImgProducto{ height: 280px; width: 200px; padding-top: 20px;}
+div.producto{
+    height:430px; 
+    width: 220px;
+}
+div.productoImg{
+    height:320px; 
+    width: 200px;
+}
+div.productoImg{
+    height:300px; 
+    width: 200px;
+}
+
 .fotoProducto{ margin-left: auto;}
 #botoneraderubros{text-align:center;}
+div#logeoIdentidad{text-align:right;margin-left:30px }
 
 /* CSS Document for chat MICAMI
 body {  
