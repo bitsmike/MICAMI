@@ -1,8 +1,7 @@
-<?session_start();?>
 <div id="paginaInicial">
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
-        <h1>Minisuper MICAMI</h1>
+        <h1>Tiendas MICAMI</h1>
         <p>Bienvenid@ a nuestra tienda virtual, si eres nuevo por aca es necesario que te registres para poder ser un CLIENTE MICAMI.</p>
         <p><a class="btn btn-primary btn-large" onclick="btnPress(login);">Reg&iacute;strate</a></p>
     </div>

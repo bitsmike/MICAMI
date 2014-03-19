@@ -16,7 +16,7 @@ $(document).ready(function(){
 function cargarEncabezado(urlPagina){
     $.get(urlPagina, function(data){
        $('div#contenedorSuperior').html(data);
-        verificarSesion();
+        //verificarSesion();
     });
 };
 
@@ -195,8 +195,8 @@ function verificarSesion(){
     }else{
         $('div#logeoIdentidad').empty();
         $('div#logeoIdentidad').append(''
-            +'<button type="button" class="btn btn-link">Bienvenido a tu cuenta</button>'
-            +'<button type="button" class="btn btn-link">Cerrar sesion</button>'
+            +'<button type="submit" class="btn btn-link">Bienvenido a tu cuenta</button>'
+            +'<button type="submit" class="btn btn-link">Cerrar sesion</button>'
             );
     };
 };
@@ -213,7 +213,7 @@ function loguearUsuario(){
             //utilizaremos un iterador para extraer los datos contenidos en el objeto 'items' => $JSONArray
             $.each(data.items,function(id,valor){
                 nombreCliente=valor.nombres;
-            alert("Te damos la bienvenida: "+nombreCliente);
+            //alert("Te damos la bienvenida: "+nombreCliente);
                 $("div#logeoIdentidad").empty();
                 $('div#logeoIdentidad').append(''
                     +'<button type="button" class="btn btn-link">Bienvenid@,'+nombreCliente+'</button>'
@@ -221,7 +221,7 @@ function loguearUsuario(){
             });
             cargarContenido("vista/inicio.php");
         }else{
-            alert("Usuario o contraseña no validos");
+            //alert("Usuario o contraseña no validos");
             $("#txtPass").val("");
             $("#txtUser").val("");
             $("#txtUser").focus();

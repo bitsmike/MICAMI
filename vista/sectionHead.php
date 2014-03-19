@@ -4,36 +4,41 @@
  * and open the template in the editor.
  */
 ?>
-<div class="container-fluid">
-    <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-            <div class="container">
-                <div class="span12">
-                    <div class="span4">
-                        <a class="brand" href="#" onclick="btnPress('inicio');">MICAMI.com</a>
-                    </div>
-                    <div class="row-fluid" id="buscador">
-                        <form class="navbar-search">
-                            <input type="text" class="search-query" placeholder="Buscar carrito, muñeca, leche,etc" name="srcBuscadorMicami">
-                        </form>
-                    </div>
-                </div>
+<div class="container-fluid">  
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a  id="" class="navbar-brand" href="#" onclick="btnPress('inicio');">Tiendas Micami</a>
             </div>
-                
-            <div id="botoneraderubros">
-                <div class="row-fluid">
-                    <div class="">
-                        <button class="btn btn-success" id="jugueteria" onclick="btnPress('Jugueteria');">JUGUETERIA</button>
-                        <button class="btn btn-success" id="maleteria" onclick="btnPress('Maleteria');">MALETERIA</button>
-                        <button class="btn btn-success" id="libreria" onclick="btnPress('Libreria');">LIBRERIA</button>
-                        <button class="btn btn-success" id="abarroteria" onclick="btnPress('Abarroteria');">ABARROTERIA</button>
-                        <button class="btn btn-warning offset4 dropdown-toggle" data-toggle="dropdown" id="miBolsa" onclick="">
+            <div class="navbar-collapse collapse" id="botoneraderubros">
+                <ul class="nav navbar-nav">
+                    <li id="btnJugueteria"><a href="#" onclick="btnPress('Jugueteria');">JUGUETERIA</a></li>
+                    <li id="btnMaleteria"><a href="#" onclick="btnPress('Maleteria');">MALETERIA</a></li>
+                    <li id="btnLibreria"><a href="#" onclick="btnPress('Libreria');">LIBRERIA</a></li>
+                    <li id="btnAbarroteria"><a href="#" onclick="btnPress('Abarroteria');">ABARROTERIA</a></li>
+                    <li>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Buscar carrito, muñeca, leche,etc" name="srcBuscar" required>
+                            </div>
+                            <button type="submit" class="btn btn-success">Buscar</button>
+                        </form>
+                    </li>
+                    <li>
+                        <a type="submit"  class="navbar-right" id="miBolsa" onclick="">
                             MI BOLSA DE COMPRAS
                             <span class="badge" id="contadorProductos">0</span>
-                        </button>
-                        <div class="bolsadecompras"></div>
-                    </div>
-                </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-fluid container" id="logeoIdentidad">
             </div>
         </div>
     </div>
