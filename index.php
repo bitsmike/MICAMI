@@ -20,9 +20,9 @@
         <!-- Custom styles for this template -->
         <link href="css/main.css" rel="stylesheet" />
         <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/docs.min.css" rel="stylesheet" />
         <link href="css/carousel.css" rel="stylesheet" />
 <!--        <link href="css/bootstrap-theme.css" rel="stylesheet" />-->
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <!--        <script src="js/plugins.js"></script>  -->
 
     </head>
@@ -47,5 +47,6 @@
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/docs.min.js"></script>
     </body>
 </html>
