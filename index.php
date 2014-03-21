@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>Tiendas MICAMI</title>
+        <title>Minimarket MICAMI</title>
         <!-- Just for debugging purposes. Don't actually copy this line! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -27,9 +27,10 @@
 
     </head>
     
-    <body>
+    <body style data-twttr-rendered="true">
         <section>
             <div class="container" id="contenedorSuperior"></div>
+
             <div class="container" id="contenedorCentral">
                 <div class="hero-unit"><h2 class="sut-titulo" id="subtitle"></h2></div>
                 <div class="container-fluid" id="mostradorProductos">

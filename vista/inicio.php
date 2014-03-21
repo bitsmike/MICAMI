@@ -2,9 +2,9 @@
     <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="bs-docs-header" id="content">
         <div class="container">
-            <h1>Tiendas MICAMI</h1>
+            <h1>Minimarket MICAMI</h1>
             <p>Bienvenid@ a nuestra tienda virtual.</p>
-            <p>Una tienda para gente atractiva y rapida, todo a tu alcance desde tu hogar</p>
+            <p>Una tienda para gente atractiva y pr&aacute;ctica, los productos llegan a tu hogar sin que salgas de ella.</p>
         </div>
 
     </div>
@@ -44,4 +44,7 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div>
+
 </div>
+
+    
