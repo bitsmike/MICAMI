@@ -4,32 +4,13 @@ Michael Marin
 ==========================================================================*/
 
 body{
-    padding-top:0px; 
+    padding-top:0px;
     padding-bottom:0px;
 }
 
 .Formulario-position{
     padding-top: 70px; 
     padding-left: 40%;
-}
-
-div.producto{
-    height:430px; 
-    width: 220px;
-}
-
-div.productoImg{
-    height:320px; 
-    width: 200px;
-}
-
-div.productoImg{
-    height:300px; 
-    width: 200px;
-}
-
-.fotoProducto{
-    margin-left: auto;
 }
 
 #botoneraderubros{
@@ -39,6 +20,22 @@ div.productoImg{
 div#logeoIdentidad{
     text-align:right;
     margin-left:30px;
+}
+
+div.producto{height:430px;width: 220px;}
+div.productoImg{height:320px;width: 200px;}
+div.fotoProducto{margin-left: auto;}
+div.divPrecioProducto{
+    color: white;
+    text-shadow:0px 0px 20px rgba(0,255,0,1);
+    background-color: red;
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    padding-top:7px;
+    border: 1px solid red;
+    border-radius: 15px;
+
 }
 
 

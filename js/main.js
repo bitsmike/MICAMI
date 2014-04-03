@@ -110,11 +110,13 @@ function cargarProductos(rubro){
                 }
                 
                 var divProductos = "<div class='col-xs-6 col-md-4 producto' id='producto"+vCont+"'>"
-                                        +"<div class='productoImg'><img class='fotoProducto img-rounded' src='./fotos/"+valor.fotoProducto+".jpg'></div>"
+                                        +"<div class='productoImg'>"
+                                            +"<img class='fotoProducto img-rounded' src='./fotos/"+valor.fotoProducto+".jpg'>"
+                                            +"<div class='divPrecioProducto'><p class='precio'>S/."+valor.precioProducto+"</p></div>"
+                                        +"</div>"
                                         +"<div class='productoDetalles'>"
                                             //+"<div class='divNombreProducto'>"+valor.idProducto+"</div>"
                                             +"<div class='divNombreProducto'>"+valor.nombreProducto+"</div>"
-                                            +"<div class='divPrecioProducto'>S/."+valor.precioProducto+"</div>"
                                             //+Ancho
                                             //+Alto
                                             //+Largo
